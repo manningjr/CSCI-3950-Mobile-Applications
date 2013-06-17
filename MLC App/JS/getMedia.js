@@ -2,7 +2,6 @@
 // mediaDisplay.js
 
 var requestObject = false;
-
 requestObject = new XMLHttpRequest();
 
 function initializeData()
@@ -14,11 +13,11 @@ function initializeData()
 
 function showTitleContent()
 {
-	if (requestObject.readyState == 4)
+	if (requestObject.readyState == 4) //Object request complete.
 	{
+
 		var text = requestObject.responseText;
 		alert(text);
-		
 	    var myMedia = jQuery.parseJSON(text).media;
 			
 		$('#mediaUL').text('');
@@ -30,26 +29,13 @@ function showTitleContent()
 			li.removeAttr('id');
 			li.appendTo('#mediaUL');
 			
-			li.find('.mediaTitle').text(tutor['title']);
-			li.find('.mediaType').text(tutor['mediaType']);
-			li.find('.mediaYear').text(tutor['year']);
-			li.find('.mediaLanguage').text(tutor['language']);
-			li.find('.mediaAvaliable').text(tutor['available']);
+			li.find('.mediaTitle').text(media['title']);
+			li.find('.mediaType').text(media['mediaType']);
+			li.find('.mediaYear').text(media['year']);
+			li.find('.mediaLanguage').text(media['language']);
+			li.find('.mediaAvaliable').text(media['available']);
 			li.data('mediaID','media'+i);
 			
-			/*
-			li.click( function()
-			{
-				var clickedTutor = $(this);
-				
-				var uniqueID = clickedTutor.data('tutorID');
-				var email = clickedTutor.find('.tutorEmail').text();
-				alert( uniqueID + '  ' +email);
-				clickedTutor.removeClass('tutorName');
-				clickedTutor.addClass('tutorEmailClicked');
-			});*/
 		}
-
-	}
-		
+	}		
 }
