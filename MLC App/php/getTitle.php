@@ -1,5 +1,5 @@
 <?php
-	include ('..php/db_connect.php');
+	include ('../php/db_connect.php');
 	
 	$link=db_connect();
 	$sql = "SELECT node.title, 
