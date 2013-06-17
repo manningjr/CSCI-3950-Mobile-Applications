@@ -2,6 +2,7 @@
 // mediaDisplay.js
 
 var requestObject = false;
+
 requestObject = new XMLHttpRequest();
 
 function initializeData()
@@ -15,9 +16,9 @@ function showTitleContent()
 {
 	if (requestObject.readyState == 4)
 	{
-
 		var text = requestObject.responseText;
 		alert(text);
+		
 	    var myMedia = jQuery.parseJSON(text).media;
 			
 		$('#mediaUL').text('');
