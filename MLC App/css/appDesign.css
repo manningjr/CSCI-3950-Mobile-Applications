@@ -58,3 +58,32 @@ p
     z-index:2;
    	font-size: .2em !important;
 }
+
+li{
+    padding-bottom:7px;
+}
+
+#mediaUL{
+    text-shadow: none;
+}
+
+span.mediaTitle{
+    color:#fff;
+    text-decoration: underline;
+}
+
+span.mediaType{
+    color: blue;
+}
+
+span.mediaYear{
+    color: blue;
+}
+
+span.mediaLanguage{
+    color: red;
+}
+
+span.mediaAvaliable{
+    color: #fff;
+}

@@ -33,7 +33,7 @@ function showTitleContent()
 			li.find('.mediaType').text(media['mediaType']);
 			li.find('.mediaYear').text(media['year']);
 			li.find('.mediaLanguage').text(media['language']);
-			li.find('.mediaAvaliable').text(media['available']);
+			li.find('.mediaAvaliable').text('Avaliable: ' + media['available']);
 			li.data('mediaID','media'+i);
 			
 		}
