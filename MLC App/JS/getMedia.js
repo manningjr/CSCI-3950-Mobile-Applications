@@ -19,9 +19,9 @@ function showTitleContent()
 		var text = requestObject.responseText;
 		alert(text);
 		
-	    var myTutors = jQuery.parseJSON(text).media;
+	    var myTutors = jQuery.parseJSON(text).tutors;
 			
-		$('#mediaUL').text('');
+		$('#tutorUL').text('');
 	
 		for(var i=0; i< myTutors.length; i++)
 		{
