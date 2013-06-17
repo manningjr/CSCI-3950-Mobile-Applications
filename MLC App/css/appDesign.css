@@ -17,6 +17,20 @@ h1
 	font-weight:bold;
 }
 
+h2
+{
+	text-shadow: none;
+	color: white;
+	font-weight:bold
+}
+
+p
+{
+	text-shadow: none;
+	color: white;
+	font-weight:none;
+}
+
 .custom-header
 {
     height:18px;
