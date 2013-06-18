@@ -22,7 +22,7 @@
 	.header-btn-left
 	{
 		position:absolute;
-		left:25px;
+		left:5px;
 		top:5px;
 		z-index:1;
 		display: table-cell;
@@ -33,7 +33,7 @@
 	.header-btn-right
 	{
 		position:absolute;
-		right:25px;
+		right:5px;
 		top:5px;
 		z-index:2;
 		display: table-cell;
