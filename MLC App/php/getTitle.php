@@ -1,5 +1,5 @@
 <?php
-	include ('../php/db_connect.php');
+	include ('../../../../Language App/php/db_connect.php');
 	
 	$link=db_connect();
 	$sql = "SELECT node.title, 
@@ -7,7 +7,6 @@
 				   field_data_field_year.field_year_value,
 				   field_data_field_language.field_language_value,
 				   field_data_field_available.field_available_value,
-				   file_managed.uri,
 				   file_managed.filename".
 	
 	        " FROM ".
@@ -38,8 +37,7 @@
 				   'year' => $row['field_year_value'] ,
 				   'language' => $row['field_language_value'] ,
 				   'available' => $row['field_available_value'] ,
-				   'imageTitle' => $row['filename'],
-				   'image' => $row['uri']
+				   'imageTitle' => $row['filename']
 		           );
 		array_push($myArray,$d);				
 	}
