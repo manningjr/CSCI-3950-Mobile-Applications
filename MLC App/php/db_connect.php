@@ -2,8 +2,6 @@
 
 function db_connect() 
 {
-	
-	
 	//$server="localhost";
 	//$username="root";
 	//$password="";
