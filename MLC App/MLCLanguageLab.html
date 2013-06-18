@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>MLC Language Lab</title>
+    	<meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="viewport" content="user-scalable=no, width=device-width"/-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+        <link rel="stylesheet" 
+             href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css">
+       	
+     	<link href="css/appDesign.css" rel="stylesheet" type="text/css">
+        
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        
+        <script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+        <script src="js/getMedia.js" type="text/javascript"> </script>
+        
+        <link rel="apple-touch-icon" href="images/gcsuLogo.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="images/gcsuLogo.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="images/gcsuLogo.png" />
+   	</head>
+            
+   	<body onLoad="initializeData();">
+        <div data-role="page" id="home">
+        	<div data-role="header">
+                    <h1 style="font-size: 100%;">MLC Language Lab</h1>
+           	</div>
+         	<div data-role="content">
+            	<center>
+					<a href="#schedule"><img style='width: 100%;max-width:579px;' src="http://i.imgur.com/Wa68XPJ.png"></a><br>
+					<a href="#information"><img style='width: 100%;max-width:579px;' src="http://i.imgur.com/qGwjfFX.png"></a><br>
+					<a href="#resources"><img style='width: 100%;max-width:579px;' src="http://i.imgur.com/l7PiLUP.png"></a><br>
+					<a href="http://www.gcsu.edu"><img style='width: 100%; max-width:579px;' src="http://i.imgur.com/pi4m5MB.png"></a>
+				</center>
+            </div>
+        </div> <!--Main Menu Page-->
+        
+        
+        
+    <div data-role="page" id="schedule" data-add-back-btn="true">
+         	<div data-role="header">
+           		<h1 style="font-size: 140%;">Schedule</h1>
+         	</div>
+         	<div data-role="content">
+        		<ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#schedSpan">SPANISH</a>
+                   	</li>
+                    <li>
+                    	<a href="#schedFren">FRENCH</a>
+                   	</li>
+                    <li>
+                    	<a href="#schedItal">ITALIAN</a>
+                   	</li>
+                    <li>
+                    	<a href="#schedGerm">GERMAN</a>
+                   	</li>
+        		</ul>
+         	</div>
+		</div> <!-- Schedule Main Page -->
+        
+        	<!-- Language Schedule Pages Begin -->
+        
+                <div data-role="page" id="schedSpan" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Spanish Schedule</h1>
+                    </div>
+                    <div data-role="content">
+                        <iframe src="https://dl.dropboxusercontent.com/u/45361940/Schedule.html#Spanish" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Schedule Spanish -->
+                
+                <div data-role="page" id="schedFren" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>French Schedule</h1>
+                    </div>
+                    <div data-role="content">
+                        <iframe src="https://dl.dropboxusercontent.com/u/45361940/Schedule.html#French" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Schedule French -->
+                
+                <div data-role="page" id="schedItal" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Italian Schedule</h1>
+                    </div>
+                    <div data-role="content">
+                        <iframe src="https://dl.dropboxusercontent.com/u/45361940/Schedule.html#Italian" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Schedule Italian -->
+                
+                <div data-role="page" id="schedGerm" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>German Schedule</h1>
+                    </div>
+                    <div data-role="content">
+                        <iframe src="https://dl.dropboxusercontent.com/u/45361940/Schedule.html#German" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Schedule German -->
+            
+       		<!-- Language Schedule Pages End -->
+        
+        
+        
+    	<div data-role="page" id="information" data-add-back-btn="true">
+            <div data-role="header">
+                <h1 style="font-size: 140%;">Information</h1>
+            </div>
+            <div data-role="content">
+                        <ul data-role="listview" data-inset="true" style="list-style-type:none">
+                    <li>
+                        <a href="#L&H">Location & Hours</a>
+                   	</li>
+                    <li>
+                        <a href="#F&H">Faculty & Staff</a>
+                  	</li>
+                    <li>
+                        <a href="#Tutors">Tutors</a>
+                  	</li>
+            </div>
+        </div>
+         	<!--Infomation Main Page-->
+        
+            <!-- Information Pages Begin -->
+                
+                <div data-role="page" id="L&H" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Location & Hours</h1>
+                    </div>
+                    <div data-role="content">
+                    	Page Under Construction!
+                        <!--<iframe src="#" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>-->
+                    </div>
+                </div><!-- Location & Hours -->
+                
+                <div data-role="page" id="F&H" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Faculty & Staff</h1>
+                    </div>
+                    <div data-role="content">
+                    	Page Under Construction!
+                        <!--<iframe src="#" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>-->
+                    </div>
+                </div><!-- Faculty & Staff --> 
+                
+                <div data-role="page" id="Tutors" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Tutors</h1>
+                    </div>
+                    <div data-role="content">
+                    	Page Under Construction!
+                        <!--<iframe src="#" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>-->
+                    </div>
+                </div><!-- Tutors -->                 
+            <!-- Information Pages End -->
+        
+        
+        
+        <div data-role="page" id="resources" data-add-back-btn="true">
+         	<div data-role="header">
+                <h1 style="font-size: 140%;">Resources</h1>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" >
+                    <li><a href="#medLib">MEDIA LIBRARY</a></li>
+                    <li><a href="#wordRef">WORD REFERENCE</a></li>
+                    <li><a href="#useApp">USEFUL APPS</a></li>
+                </ul>
+            </div>
+        </div><!--Resources Main Page-->
+        
+            <!-- Resources Pages Begins -->
+                <div data-role="page" id="medLib" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Media Library</h1>
+                    </div>
+                    <div data-role="content">
+
+                        <!--JAVASCRipt STUFF HERE
+                        GET RID OF IFRAME-->
+
+                        <iframe src="http://www.mlc-info.net/mobile-library" width="100%" height="80%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    
+                        <iframe src="http://www.mlc-info.net/mobile-library" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Media Library -->
+                
+                <div data-role="page" id="wordRef" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Word Reference</h1>
+                    </div>
+                    <div data-role="content">
+                        <iframe src="http://www.wordreference.com/" width="100%" height="100%" style="border:0px; margin: 0px; padding: 0px;"> </iframe>
+                    </div>
+                </div><!-- Word Reference -->
+                
+                <div data-role="page" id="useApp" data-add-back-btn="true">
+                    <div data-role="header">
+                        <h1>Useful Apps</h1>
+                    </div>
+                    <div data-role="content">
+                        Page Under Construction!
+                    </div>
+                </div><!-- Useful Apps -->
+            
+                
+                
+            <!-- Resource Pages End -->
+        
+    </body>
+</html>
