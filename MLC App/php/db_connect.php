@@ -11,7 +11,7 @@ function db_connect()
 	//ylis server
 	$server="localhost";
 	$username="mjohn";
-	$password="mjohn";
+	$password="mjohn002";
     $dbName="mjohn";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
