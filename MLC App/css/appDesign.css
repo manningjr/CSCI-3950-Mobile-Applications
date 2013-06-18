@@ -33,8 +33,20 @@ p
 	font-weight:none;
 }
 
+
+/* * * * * * * * * * * * * * *
+	Media Library formatting.
+ * * * * * * * * * * * * * * */
 li{
     padding-bottom:7px;
+}
+
+div.mainMedia{
+	width:90%;
+}
+
+div.headerMedia{
+	
 }
 
 #mediaUL{
