@@ -2,7 +2,6 @@
 // mediaDisplay.js
 
 var requestObject = false;
-
 requestObject = new XMLHttpRequest();
 
 function initializeData()
@@ -14,39 +13,29 @@ function initializeData()
 
 function showTitleContent()
 {
-	if (requestObject.readyState == 4)
+	if (requestObject.readyState == 4) //Object request complete.
 	{
+
 		var text = requestObject.responseText;
 		alert(text);
-		
-	    var myTutors = jQuery.parseJSON(text).tutors;
+	    var myMedia = jQuery.parseJSON(text).media;
 			
-		$('#tutorUL').text('');
+		$('#mediaUL').text('');
 	
-		for(var i=0; i< myTutors.length; i++)
+		for(var i=0; i< myMedia.length; i++)
 		{
-			var tutor = myTutors[i];
-			var li =$('#tutorLI').clone();
+			var media = myMedia[i];
+			var li =$('#mediaLI').clone();
 			li.removeAttr('id');
-			li.appendTo('#tutorUL');
+			li.appendTo('#mediaUL');
 			
-			li.find('.tutorName').text(tutor['fName']);
-			li.find('.tutorEmail').text(tutor['email']);
-			li.data('tutorID','tutor'+i);
-			li.find('.tutorEmail').css('visibility','hidden');
+			li.find('.mediaTitle').text(media['title']);
+			li.find('.mediaType').text(media['mediaType']);
+			li.find('.mediaYear').text(media['year']);
+			li.find('.mediaLanguage').text(media['language']);
+			li.find('.mediaAvaliable').text('Avaliable: ' + media['available']);
+			li.data('mediaID','media'+i);
 			
-			li.click( function()
-			{
-				var clickedTutor = $(this);
-				
-				var uniqueID = clickedTutor.data('tutorID');
-				var email = clickedTutor.find('.tutorEmail').text();
-				alert( uniqueID + '  ' +email);
-				clickedTutor.removeClass('tutorName');
-				clickedTutor.addClass('tutorEmailClicked');
-			});
 		}
-
-	}
-		
+	}		
 }

@@ -1,25 +1,28 @@
 <?php
-	include ('db_connect.php');
+	include ('../php/db_connect.php');
 	
 	$link=db_connect();
 	$sql = "SELECT node.title, 
 	               field_data_field_media_type.field_media_type_value,
 				   field_data_field_year.field_year_value,
 				   field_data_field_language.field_language_value,
-				   field_data_field_available.field_available_value".
+				   field_data_field_available.field_available_value,
+				   file_managed.uri".
 	
 	        " FROM ".
 	       " node, 
 		     field_data_field_media_type,
 			 field_data_field_year,
 			 field_data_field_language,
-			 field_data_field_available
+			 field_data_field_available,
+			 file_managed
 			 
 			  WHERE
 		          node.nid = field_data_field_media_type.entity_id 
 			  AND node.nid = field_data_field_year.entity_id 
 			  AND node.nid = field_data_field_language.entity_id 
-		  	  AND node.nid = field_data_field_available.entity_id "
+		  	  AND node.nid = field_data_field_available.entity_id
+			  AND node.nid = file_managed.fid "
 			;
 	
 	// WHERE node.title LIKE 'Men%'  ".
@@ -33,12 +36,14 @@
 				   'mediaType' => $row['field_media_type_value'] ,
 				   'year' => $row['field_year_value'] ,
 				   'language' => $row['field_language_value'] ,
-				   'available' => $row['field_available_value'] 
+				   'available' => $row['field_available_value'] ,
+				   'image' => $row['uri']
 		           );
 		array_push($myArray,$d);				
 	}
 	$newArray = array('media' =>$myArray);
 	$output= json_encode($newArray);
-	echo $output;
+	
+	echo utf8_encode($output);
 	mysql_close($link);
 ?>
