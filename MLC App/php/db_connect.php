@@ -9,7 +9,7 @@ function db_connect()
 	$dbName="mlcml";
 	
 	//ylis
-	$server="ylis.gcsu.edu";
+	$server="localhost";
 	$username="mjohn";
 	$password="mjohn";
     $dbName="mjohn";
