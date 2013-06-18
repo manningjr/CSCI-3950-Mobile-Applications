@@ -7,7 +7,8 @@
 				   field_data_field_year.field_year_value,
 				   field_data_field_language.field_language_value,
 				   field_data_field_available.field_available_value,
-				   file_managed.uri".
+				   file_managed.uri,
+				   file_managed.filename".
 	
 	        " FROM ".
 	       " node, 
@@ -37,13 +38,15 @@
 				   'year' => $row['field_year_value'] ,
 				   'language' => $row['field_language_value'] ,
 				   'available' => $row['field_available_value'] ,
+				   'imageTitle' => $row['filename'],
 				   'image' => $row['uri']
 		           );
 		array_push($myArray,$d);				
 	}
 	$newArray = array('media' =>$myArray);
 	$output= json_encode($newArray);
-	
-	echo utf8_encode($output);
+	// $comma_sepereated = implode(",", $newArray);
+	// $output = json_decode($comma_sepereated);
+	echo $output;
 	mysql_close($link);
 ?>

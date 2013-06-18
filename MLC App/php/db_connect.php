@@ -2,19 +2,17 @@
 
 function db_connect() 
 {
-	
-	
-	$server="localhost";
-	$username="root";
-	$password="";
-   //$dbName="test";
-	$dbName="mlcml";
+	//$server="localhost";
+	//$username="root";
+	//$password="";
+   	//$dbName="test";
+	//$dbName="mlcml";
 	
 	//ylis
-	//$server="localhost";
-	//$username="student2";
-	//$password="student2";
-    //$dbName="student2";
+	$server="localhost";
+	$username="mjohn";
+	$password="mjohn002";
+    $dbName="mlcml";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
 	
