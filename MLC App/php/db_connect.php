@@ -9,10 +9,10 @@ function db_connect()
 	$dbName="mlcml";
 	
 	//ylis
-	//$server="localhost";
-	//$username="mjohn";
-	//$password="mjohn";
-    //$dbName="mjohn";
+	$server="ylis.gcsu.edu";
+	$username="mjohn";
+	$password="mjohn";
+    $dbName="mjohn";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
 	
