@@ -2,11 +2,11 @@
 
 function db_connect() 
 {
-	$server="localhost";
-	$username="root";
-	$password="";
-   	$dbName="test";
-	$dbName="mlcml";
+	//$server="localhost";
+	//$username="root";
+	//$password="";
+   	//$dbName="test";
+	//$dbName="mlcml";
 	
 	//ylis server
 	$server="localhost";
