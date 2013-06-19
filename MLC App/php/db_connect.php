@@ -4,14 +4,14 @@ function db_connect()
 {
 	//$server="localhost";
 	//$username="root";
-	//$password="";
+	//$password="root";
    	//$dbName="test";
 	//$dbName="mlcml";
 	
 	//ylis server
 	$server="localhost";
 	$username="mjohn";
-	$password="mjohn002";
+	$password="mjohn";
     $dbName="mjohn";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
