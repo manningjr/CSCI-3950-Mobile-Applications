@@ -3,7 +3,10 @@
 
 var requestObject = false;
 requestObject = new XMLHttpRequest();
-
+$(document).ready(function()
+{
+	alert("hello2");
+});
 function initializeData()
 {
 	alert("hello");
