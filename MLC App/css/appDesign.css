@@ -54,7 +54,7 @@ div.headerMedia{
 }
 
 span.mediaTitle{
-    color:#fff;
+    color:#000000;
     text-decoration: underline;
 }
 
@@ -71,5 +71,5 @@ span.mediaLanguage{
 }
 
 span.mediaAvaliable{
-    color: #fff;
+    color: #000000;
 }

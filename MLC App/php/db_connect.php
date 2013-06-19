@@ -2,15 +2,15 @@
 
 function db_connect() 
 {
-	//$server="mysql.mlc-info.net";
-	//$username="ranvel";
-	//$password="46hzShaz";
-	//$dbName="mlcml";
+	/*$server="mysql.mlc-info.net";
+	$username="ranvel";
+	$password="46hzShaz";
+	$dbName="mlcml";*/
 	
 	//$server="localhost";
 	//$username="root";
 	//$password="root";
-   	//$dbName="test";
+   	//$dbName="mlcml";
 	//$dbName="mlcml";
 	
 	//ylis server
