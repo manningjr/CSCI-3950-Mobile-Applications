@@ -34,7 +34,7 @@ function showTitleContent()
 			li.find('.mediaYear').text(media['year']);
 			li.find('.mediaLanguage').text(media['language']);
 			li.find('.mediaAvaliable').text('Avaliable: ' + media['available']);
-			li.find('.mediaImage').attr('src', media['imageTitle']);
+			li.find('.mediaImage').attr('src', "../sites/default/files/" + media['imageTitle']);
 			li.data('mediaID','media'+i);
 			
 		}
