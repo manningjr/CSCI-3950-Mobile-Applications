@@ -2,10 +2,10 @@
 
 function db_connect() 
 {
-	$server="mysql.mlc-info.net";
-	$username="ranvel";
-	$password="46hzShaz";
-	$dbName="mlcml";
+	//$server="mysql.mlc-info.net";
+	//$username="ranvel";
+	//$password="46hzShaz";
+	//$dbName="mlcml";
 	
 	//$server="localhost";
 	//$username="root";
@@ -14,10 +14,10 @@ function db_connect()
 	//$dbName="mlcml";
 	
 	//ylis server
-	//$server="localhost";
-	//$username="mjohn";
-	//$password="mjohn";
-    //$dbName="mjohn";
+	$server="localhost";
+	$username="mjohn";
+	$password="mjohn";
+    $dbName="mjohn";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
 	mysql_set_charset('utf8',$link);

@@ -6,6 +6,7 @@ requestObject = new XMLHttpRequest();
 
 function initializeData()
 {
+	alert("hello");
 	requestObject.open("GET","php/getTitle.php",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
@@ -17,7 +18,7 @@ function showTitleContent()
 	{
 
 		var text = requestObject.responseText;
-		alert(text);
+		alert("hello");
 	    var myMedia = jQuery.parseJSON(text).media;
 			
 		$('#mediaUL').text('');
