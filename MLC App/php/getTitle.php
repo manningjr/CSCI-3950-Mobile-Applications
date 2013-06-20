@@ -9,7 +9,7 @@
 				   field_data_field_available.field_available_value,
 				   file_managed.filename".
 	
-	        " FROM ".
+	       " FROM ".
 	       " node, 
 		     field_data_field_media_type,
 			 field_data_field_year,
@@ -22,8 +22,7 @@
 			  AND node.nid = field_data_field_year.entity_id 
 			  AND node.nid = field_data_field_language.entity_id 
 		  	  AND node.nid = field_data_field_available.entity_id
-			  AND node.nid = file_managed.fid "
-			;
+			  AND node.nid = file_managed.fid ";
 	
 	// WHERE node.title LIKE 'Men%'  ".
 	$result = db_query($sql,$link);
