@@ -39,3 +39,11 @@ function showTitleContent()
 		}
 	}		
 }
+
+//Function reads the form input and querys the database based on that.
+function searchDB(){
+	var title = $("#name-a").val();
+	var type = $("#select-choice-1").val();
+	var language = $("#select-choice-2").val();
+	alert(title + type + language);
+}
