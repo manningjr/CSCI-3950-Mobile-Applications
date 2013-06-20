@@ -45,5 +45,5 @@ function searchDB(){
 	var title = $("#name-a").val();
 	var type = $("#select-choice-1").val();
 	var language = $("#select-choice-2").val();
-	alert(title + type + language);
+	alert(title + " " + type + " " + language);
 }
