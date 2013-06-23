@@ -1,11 +1,12 @@
 // JavaScript Document
-// mediaDisplay.js
+// getMedia.js
 
 var requestObject = false;
 requestObject = new XMLHttpRequest();
 
 function initializeData()
 {
+	alert('Database Loaded!'); //Alert is for testing purpose only
 	requestObject.open("GET","php/getTitle.php",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
@@ -13,12 +14,10 @@ function initializeData()
 
 function showTitleContent()
 {
-	if (requestObject.readyState == 4) //Object request complete.
+	if (requestObject.readyState == 4)
 	{
-
 		var text = requestObject.responseText;
-	    var myMedia = jQuery.parseJSON(text).media;
-			
+	    var myMedia = jQuery.parseJSON(text).media;	
 		$('#mediaUL').text('');
 	
 		for(var i=0; i< myMedia.length; i++)
@@ -34,16 +33,19 @@ function showTitleContent()
 			li.find('.mediaLanguage').text(media['language']);
 			li.find('.mediaAvaliable').text('Avaliable: ' + media['available']);
 			li.find('.mediaImage').attr('src', "../sites/default/files/" + media['imageTitle']);
-			li.data('mediaID','media'+i);
-			
+			li.data('mediaID','media'+i);			
 		}
 	}		
 }
 
-//Function reads the form input and querys the database based on that.
+//Reads the form and querys the database based on user input.
 function searchDB(){
 	var title = $("#name-a").val();
 	var type = $("#select-choice-1").val();
 	var language = $("#select-choice-2").val();
-	alert(title + " " + type + " " + language);
+
+	requestObject.open("GET","php/getTitle.php?title=" + title + "&type=" + type + "&language=" + language + "",true);
+	requestObject.onreadystatechange = showTitleContent;
+	requestObject.send(null);
+	alert("Title: " + title + "\nType: " + type + "\nLanguage: " + language); //Alert is for testing purpose only
 }
