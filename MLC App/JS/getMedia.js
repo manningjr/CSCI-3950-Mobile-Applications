@@ -6,7 +6,6 @@ requestObject = new XMLHttpRequest();
 
 function initializeData()
 {
-	alert('Database Loaded!'); //Alert is for testing purpose only
 	requestObject.open("GET","php/getTitle.php",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
