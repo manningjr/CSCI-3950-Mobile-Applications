@@ -27,7 +27,8 @@
 
 	//Adding requirements to the query where necessary.
 	if(isset($searchTitle) && $searchTitle != ''){
-		$sql = $sql . " AND node.title = '" . $searchTitle . "'"; // WHERE node.title LIKE 'Men%'  ".
+		//$sql = $sql . " AND node.title = '" . $searchTitle . "'"; // WHERE node.title LIKE 'Men%'  ".
+		$sql = $sql . " AND node.title LIKE '%" . $searchTitle . "%'"; // WHERE node.title LIKE 'Men%'  ".
 	}
 	if(isset($searchType) && $searchType != 'all'){
 		$sql = $sql . " AND field_data_field_media_type.field_media_type_value = '" . $searchType. "'";
@@ -47,7 +48,7 @@
 				   'available' => $row['field_available_value'] ,
 				   'imageTitle' => $row['filename']
 		           );
-		array_push($myArray,$d);				
+		array_push($myArray,$d);
 	}
 	$newArray = array('media' =>$myArray);
 	$output= json_encode($newArray);
