@@ -46,5 +46,4 @@ function searchDB(){
 	requestObject.open("GET","php/getTitle.php?title=" + title + "&type=" + type + "&language=" + language + "",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
-	alert("Title: " + title + "\nType: " + type + "\nLanguage: " + language); //Alert is for testing purpose only
 }
