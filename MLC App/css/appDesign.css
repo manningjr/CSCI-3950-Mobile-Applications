@@ -41,20 +41,28 @@ t{
 	Media Library formatting.
  * * * * * * * * * * * * * * */
 li{
-    padding-bottom:7px;
+    padding-bottom:4px;
 }
 
 div.mainMedia{
 	width:90%;
+	padding-right:5px;
+	padding-bottom: 5px;
 }
 
 div.headerMedia{
-	
+
 }
 
 #mediaUL{
     text-shadow: none;
+    min-height: 125px;
 }
+
+#mediaLI{
+	min-height: 125px;
+}
+
 
 span.mediaTitle{
     color:#000000;
@@ -75,4 +83,10 @@ span.mediaLanguage{
 
 span.mediaAvaliable{
     color: #000000;
+}
+
+div.imageBox{
+	margin-left:5px;
+	float:right;
+	clear:right;
 }
