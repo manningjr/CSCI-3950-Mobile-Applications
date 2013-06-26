@@ -186,8 +186,10 @@
                     <div data-role="content">
 
 
-                    <!--
-                    MEDIA LIBRARY SEARCH MENU
+                     <!--
+                    ...................................
+                    ||   MEDIA LIBRARY SEARCH MENU   ||
+                    ...................................
                     -->
                         <!--TITLE SEARCH INPUT-->
                         <label for="name-a"><t>TITLE</t></label>
@@ -214,43 +216,36 @@
                         <button type="submit" data-theme="b" name="submit" value="submit-value" class="ui-btn-hidden" aria-disabled="false" onclick="searchDB()">Submit</button>
                         <hr>
 
-
+                        <!--BEGIN MEDIA LIBRARY DISPLAY-->
                         <ul data-role="listview" id="mediaUL" data-inset="true" >
                             <li>
-                                <div class="mainMedia">
-                                    <div class="headerMedia">
-                                        <span class="mediaTitle"> Media Title </span>
-                                    </div>
-                                        <span class="mediaType"> Media Type </span>
-                                        <span class="mediaYear"> Media Year </span>
-                                        <span class="mediaLanguage"> Media Language </span>
-                                        <span class="mediaAvaliable"> Media Avaliability </span>
-                                        <span class="mediaImage"> Media Image </span>     
+                                Loading...
+                                <span class="mediaTitle"></span>
+                                <span class="mediaType"></span>
+                                <span class="mediaYear"></span>
+                                <span class="mediaLanguage"></span>
+                                <span class="mediaAvaliable"></span>
+                                <span class="mediaImage"></span>     
+                            </li>
+                        </ul>
+
+                        <ul data-role="listview" id="mediaUL" data-inset="true" style="visibility: hidden">
+                            <li  id="mediaLI" style="min-height: 110px; padding-bottom:4px;">
+                                <div class="imageBox">
+                                    <img class="mediaImage" src="" alt="Image unavaliable." height="100px" width="100px">
                                 </div>
+                                <div class="titleBox">
+                                    <span class="mediaTitle">Title</span>
+                                    (<span class="mediaYear">Year</span>)
+                                </div>
+                                <span class="mediaLanguage">Language</span><br>
+                                <span class="mediaType">Type </span><br>
+                                <span class="mediaAvaliable">Avaliability</span>                           
                             </li>
                         </ul>
-
-                        <ul data-role="listview" id="mediaUL" data-inset="true">
-                            <li  id="mediaLI" style="min-height: 110px;">
-
-                                    <div class="imageBox">
-                                            <img class="mediaImage" src="" alt="Image unavaliable." height="100px" width="100px">
-                                    </div>
-
-                                    <div class="headerMedia">
-                                        <span class="mediaTitle">Title </span>
-                                    </div>
-
-                                        <span class="mediaType">Type </span>
-                                        <span class="mediaYear">Year </span> 
-                                        <span class="mediaLanguage">Language </span> 
-                                        <span class="mediaAvaliable">Avaliability </span> 
-                                
-                            </li>
-                        </ul>
-
                     </div>
-                </div><!-- Media Library -->
+                </div>
+                <!-- END OF MEDIA LIBRARY -->
                 
                 <div data-role="page" id="wordRef" data-add-back-btn="true">
                     <div data-role="header">

@@ -57,45 +57,26 @@ border: 1px solid black;
 /* * * * * * * * * * * * * * *
 	Media Library formatting.
  * * * * * * * * * * * * * * */
-li{
-    padding-bottom:4px;
-}
 
-div.mainMedia{
-	width:90%;
-	padding-right:5px;
-	padding-bottom: 5px;
-}
-
-div.headerMedia{
+div.titleBox{
 
 }
-
-#mediaUL{
-    text-shadow: none;
-    min-height: 125px;
-}
-
-#mediaLI{
-	min-height: 125px;
-}
-
 
 span.mediaTitle{
     color:#000000;
-    text-decoration: underline;
-}
-
-span.mediaType{
-    color: blue;
+    font-size: 16pt;
 }
 
 span.mediaYear{
-    color: blue;
+    color: #363636;
+}
+
+span.mediaType{
+    color: #397D02;
 }
 
 span.mediaLanguage{
-    color: red;
+    color: #33A1DE;
 }
 
 span.mediaAvaliable{
