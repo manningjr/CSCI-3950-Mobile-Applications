@@ -8,16 +8,16 @@ function db_connect()
 	$dbName="mlcml";*/
 	
 	//Local server testing
-	$server="localhost";
-	$username="root";
-	$password="";
-   	$dbName="mlcml";
+	//$server="localhost";
+	//$username="root";
+	//$password="";
+   	//$dbName="mlcml";
 	
 	//ylis server
-	//$server="localhost";
-	//$username="mjohn";
-	//$password="mjohn";
-    //$dbName="mjohn";
+	$server="localhost";
+	$username="mjohn";
+	$password="mjohn";
+    $dbName="mjohn";
 	
     $link=mysql_connect($server, $username, $password) or die (mysql_error());
 	mysql_set_charset('utf8',$link);
