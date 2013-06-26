@@ -37,6 +37,23 @@ t{
 	color:white;
 }
 
+.tutorTable{
+	
+background-color:white;
+text-align:center;
+border: 1px solid black;
+
+}
+
+.tutorsTitle{
+	list-style:none;
+}
+
+.tutorsLists{
+	list-style:none;
+	display:inline;
+}
+
 /* * * * * * * * * * * * * * *
 	Media Library formatting.
  * * * * * * * * * * * * * * */
