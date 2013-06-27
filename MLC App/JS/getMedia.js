@@ -6,7 +6,7 @@ requestObject = new XMLHttpRequest();
 
 function initializeData()
 {
-	requestObject.open("GET","php/getTitle.php",true);
+	requestObject.open("GET","http://mlc-info.net/php/getTitle.php",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
 }
@@ -31,7 +31,7 @@ function showTitleContent()
 			li.find('.mediaYear').text(media['year']);
 			li.find('.mediaLanguage').text(media['language']);
 			li.find('.mediaAvaliable').text('Avaliable: ' + media['available']);
-			li.find('.mediaImage').attr('src', "../sites/default/files/" + media['imageTitle']);
+			li.find('.mediaImage').attr('src', "http://mlc-info.net/sites/default/files/" + media['imageTitle']);
 			li.data('mediaID','media'+i);			
 		}
 	}		
@@ -43,7 +43,7 @@ function searchDB(){
 	var type = $("#select-choice-1").val();
 	var language = $("#select-choice-2").val();
 
-	requestObject.open("GET","php/getTitle.php?title=" + title + "&type=" + type + "&language=" + language + "",true);
+	requestObject.open("GET","http://mlc-info.net/php/getTitle.php?title=" + title + "&type=" + type + "&language=" + language + "",true);
 	requestObject.onreadystatechange = showTitleContent;
 	requestObject.send(null);
 }
